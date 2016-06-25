@@ -7,7 +7,7 @@ require('./CodeEditor.css');
 
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Api from '../../api/Api';
+// import Api from '../../api/Api';
 import ErrorComponent from '../ErrorComponent';
 
 const showdown  = require('showdown');

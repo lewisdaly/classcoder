@@ -25,14 +25,12 @@ let assignment = {
   }
 }
 
-export default class App extends React.Component { 
+let currentUser =  {
+  teacherId:-1,
+  studentId:1
+}
 
-  static defaultProps = {
-    currentUser: {
-      teacherId:-1,
-      studentId:1,
-    }
-  }
+export default class App extends React.Component { 
 
   constructor(props) {
     super(props);
@@ -41,7 +39,6 @@ export default class App extends React.Component {
 
   /* TODO: change this depending on who is logged in! */
   getNavBar() {
-    const { currentUser } = this.props;
     const studentLink = '#/student/' + currentUser.studentId;
 
     return (
@@ -60,11 +57,10 @@ export default class App extends React.Component {
   }
 
   render() {
-
     return (
       <div> 
         {this.getNavBar()}
-        {React.cloneElement(this.props.children, {assignment:assignment, currentUser:this.props.currentUser})}
+        {this.props.children ? React.cloneElement(this.props.children, {assignment:assignment, currentUser:currentUser}) : null}
       </div>
     );
   }

@@ -33,7 +33,7 @@ export default class CodeEditor extends React.Component {
       textValue: this.getTextValue(this.props.studentId),
     };
 
-    this.api = new Api();
+    // this.api = new Api();
   }
 
   componentWillReceiveProps(nextProps) {

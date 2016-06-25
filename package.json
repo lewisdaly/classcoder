@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors --hot",
-    "start": "nodemon ./server/server.js & webpack-dev-server --progress --profile --colors --hot --port 8888"
+    "start": "nodemon ./server/server.js & webpack-dev-server --progress --profile --colors --hot --port 8080"
   },
   "repository": {
     "type": "git",

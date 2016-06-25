@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors --hot",
-    "start": "nodemon ./server/server.js & webpack-dev-server --progress --profile --colors --hot"
+    "start": "nodemon ./server/server.js & webpack-dev-server --progress --profile --colors --hot --port 8888"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "jsx-loader": "^0.13.2",
     "net": "^1.0.2",
     "node-libs-browser": "1.0.0",
+    "nodemon": "^1.9.2",
     "react": "15.1.0",
     "react-addons-css-transition-group": "^15.1.0",
     "react-alert": "^1.0.14",

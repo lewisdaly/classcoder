@@ -6,7 +6,7 @@ export default class Api {
   checkHtml(html) {
     //Don't know why I have to do this to get it to work... rp seems sucky so this works
     const params = 'html=' + html;
-    return this.post('http://localhost:3000/checkHtml', params);
+    return this.post('http://localhost:8889/checkHtml', params);
   }
 
 

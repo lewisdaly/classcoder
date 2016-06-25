@@ -17,7 +17,8 @@ module.exports = {
 		extensions: ['', '.js', '.jsx']
 	},
 	module: {
-		loaders: loaders
+		loaders: loaders,
+    noParse: /validate\.js/
 	},
 	devServer: {
 		contentBase: "./public",
